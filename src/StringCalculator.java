@@ -1,12 +1,12 @@
 
 public class StringCalculator {
 
-	String calculator(String str){
+	int add(String str){
 		
 		if(str.length()==0){
 			System.out.println("Chaine vide");
-			return "";
+			return 0;
 		}
-		return str;
+		return 0;
 	}
 }

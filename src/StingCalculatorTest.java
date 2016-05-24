@@ -4,15 +4,25 @@ import org.junit.Test;
 public class StingCalculatorTest {
 	
 	@Test
-	public void emptyStringTest()
+	public void nullForEmptyStringTest()
 	{
 		//given
 		StringCalculator sc = new StringCalculator();
 		//when
-		String result = sc.calculator("");
+		int result = sc.add("");
 		//then
-		assertEquals(result,"");
+		assertEquals(result,0);
 	}
 	
+	@Test
+	public void value1ForANumberParameterStringTest()
+	{
+		//given
+		StringCalculator sc = new StringCalculator();
+		//when
+		int result = sc.add("1");
+		//then
+		assertEquals(result,1);
+	}
 
 }
